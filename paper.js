@@ -2,9 +2,8 @@ class Paper{
     constructor(x,y,radius){
         var options={
             isStatic:false,
-            restitution:0.3,
             friction:0.5,
-            density:1.2,
+            density:0.7,
         }
         this.radius = radius;
         //this.x=x;
@@ -20,7 +19,7 @@ class Paper{
         translate(pos.x,pos.y);
         fill(125);
         imageMode(CENTER);
-        image(this.image,200,475,this.radius);
+        image(this.image,0,0,this.radius,this.radius);
         pop();
     }
 }
