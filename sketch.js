@@ -21,7 +21,7 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-	paper = new Paper(500,500,10);
+	paper = new Paper(500,500,50);
 	ground = new Ground();
 	bin = new Bin(1100,475);
 	//bin.addImage(binImg);
